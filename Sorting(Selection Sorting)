@@ -1,0 +1,6 @@
+list = [22,11,66,44,33,55,77,99,88,00]
+for i in range(0,len(list)):
+ min_value = min(list[i:])
+ min_index = list.index(min_value)
+ list[i],list[min_index] = list[min_index],list[i]
+print(list)
