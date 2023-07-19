@@ -1,0 +1,6 @@
+list = [99,111,222,333,444,555]
+for i in range(len(list)):
+ max_value = max(list[i:])
+ max_index = list.index(max_value)
+ list[i],list[max_index] = list[max_index],list[i]
+print(list)
